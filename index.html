@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=egde">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Долой указатели</title>
 </head>
 <body>
@@ -95,7 +95,7 @@
 <pre><code>
     void IWantPointers(const char* data, const size_t length)
     {
-    for(int i = 0; i < length; ++i) { std::cout << data[i]; }
+    for(int i = 0; i &lt;length; ++i) { std::cout &lt; data[i]; }
     }
 
     void Use()
@@ -120,7 +120,7 @@
 <pre><code>
     void IWantPointers(std::span data)
     {
-    for(const auto& c : data) { std::cout << c; }
+    for(const auto& c : data) { std::cout &lt; c; }
     }
 
     void Use()
